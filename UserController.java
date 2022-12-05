@@ -32,7 +32,7 @@ public class UserController {
     public String updateUser(@RequestBody User user)
     {
         userMapper.updateById(user);
-        return "success";
+        return "ok";
     }
 
     @DeleteMapping("/{id}")
